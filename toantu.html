@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai tap prompt</title>
+    <span id ="ketqua"></span>
+    <style>
+        #ketqua{
+            color: red;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+     <!-- <p> hãy nhấn vào chữ Try it </p>
+    <button onclick="myFunction()"> Try it</button> -->
+    <p id="demo"></p> 
+    <script language = "javaScript">
+        // var a = prompt("Nhhập chiều dài hình chữ nhật:","0")
+        // var b = prompt("Nhập chiều rộng hình chữ nhật:","0")
+        // var c = a*b
+        // document.getElementById("ketqua").innerHTML = "kết quả là:" +c;  
+        // 
+        // alert("Xin chào ...");
+        // if (confirm("Bạn có muốn chơi không ?"));
+        //     var n = prompt("Nhập tên của bạn:");
+        //     alert(n+" Bây giở bạn có thể chơi game");
+        // 
+        // function myFunction(){
+        //     var person = prompt("please enter your name", "Harry Potter");
+        //     if (person != null){
+        //         document.getElementById("demo").innerHTML = "Hello"+person +"! How are you today ?";    
+        //     }
+        // }
+         
+        var myDate = new Date();
+        var name =  prompt("nhập tên hủa bạn:")
+        var myYear = prompt("năm sinh của bạn:")
+        var myMonth =  prompt("tháng sinh của bạn:")
+        var myDaynum = prompt("ngày sinh của bạn:")
+        var Sotuoi = myDate.getFullYear() - myYear;
+        var ngay_thu = myDate.getDay();
+        alert( name + " bạn sinh ngày :"+ myDaynum +""+myMonth+ myYear+"Hiện tại bạn:" + Sotuoi + "tuổi" + "ngày thứ:" + ngay_thu );
+    </script>
+</body>
+</html>
